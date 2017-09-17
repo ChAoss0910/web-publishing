@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Survey</title>
+<link rel="stylesheet" type="text/css" href="project.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Bitter|Oleo+Script|Satisfy|Yellowtail" rel="stylesheet">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+function MM_setTextOfTextfield(objId,x,newText) { //v9.0
+  with (document){ if (getElementById){
+    var obj = getElementById(objId);} if (obj) obj.value = newText;
+  }
+}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+		<div id="nav">
+	      <ul>
+	      <li><a href="frontpage.html" >Home</a></li>
+	<li><a href="about.html">About us</a>
+    <ul>
+								<li><a href="Survey.html">Survey</a></li>
+								<li><a href="Chen.html">Author</a></li>
+								
+							</ul>
+    </li>
+	<li><a>Content</a>
+    <ul>
+								<li><a href="First.html"><h6>First Indochina War</h6></a></li>
+								<li><a href="Second.html"><h6>Second Indochina War</h6></a></li>
+								<li><a href="Third.html"><h6>Third Indochina War</h6></a></li>
+                                
+							</ul>
+    </li>
+	<li><a>Resources</a>
+    <ul>
+        <li><a href="graphics.html">Grahpics</a></li>
+        <li><a href="books.html">Books</a></li>
+    </ul> 
+    </li></ul>
+    
+</div>
+<br ><br><br>
+        <div class="header" >
+            <img src="FR1.png" id="FR1">
+        </div>
+        
+        <div class="left">
+            <a href="First.html"><div id="ph1" class="ph">I</div></a>
+			<a href="Second.html"><div class="ph" id="ph2">II</div></a>
+			<a href="Third.html"><div  class="ph" id="ph3">III</div></a>
+	 </div>
+	 <div class="right" id="text4">
+	 <form name="form1" method="post" action="http://www.usc.edu/cgi-bin/mail_form/chen579@usc.edu">
+<p>After looking at this website, can you tell me how many parts of Indochina Wars in general?</p>
+<p>
+  <input name="r2" type="radio" id="radio" onClick="MM_popupMsg('Sorry, it is not correct!');MM_DW_effectShake($('#radio'),'effect','shake','right',15,3,1500)" value="radio">
+  <label for="radio"></label>
+One</p>
+<p>
+  <input name="r2" type="radio" id="radio2" onClick="MM_popupMsg('Sorry, it is not correct.');MM_DW_effectShake($('#radio2'),'effect','shake','right',15,3,1500)" value="radio2">
+  <label for="radio2"></label>
+  Two
+</p>
+<p>
+  <input name="r2" type="radio" id="radio3" onClick="MM_popupMsg('Correct! There are mainly three parts of Indochina Wars')" value="radio3">
+  <label for="radio3"></label>
+  Three
+</p>
+<p>&nbsp;</p>
+<p>Can you tell me which one is the American War in Vietnam?</p>
+  <p>
+    <input name="r1" type="radio" id="radio4" onClick="MM_setTextOfTextfield('message','','This is French War in Vietnam.');MM_DW_effectShake($('#radio4'),'effect','shake','left',15,3,1500)" value="radio4">
+    <label for="radio4"></label>
+    The First Indochina War
+  </p>
+  <p>
+    <input name="r1" type="radio" id="radio5" onClick="MM_setTextOfTextfield('message','','Yes! This is American war in Vietnam.')" value="radio5">
+    <label for="radio5"></label>
+    <label for="radio7"></label>
+The Second Indochina War </p>
+  <p>
+    <input name="r1" type="radio" id="radio6" onClick="MM_setTextOfTextfield('message','','This is related to China and Cambodia.');MM_DW_effectShake($(this),'effect','shake','left',20,3,1500)" value="radio6">
+    <label for="radio6"></label>
+    <label for="radio8"></label>
+The Third Indochina War </p>
+  <p>
+    <label for="messagebox"></label>
+    <input type="text" name="messagebox" id="message">
+  </p><br>
+  What's your feeling about this website?<br><br>
+  <select name="">
+		<option selected=1>None</option>
+        <option>Very good</option>
+        <option>Good</option>
+        <option>Boring</option>
+       
+    </select>
+     <br><br><br>
+      Please give me some suggestion for improving this website in the future.
+      <br><br>
+	
+    <textarea name="story" id="suggestion"></textarea>
+       
+   <br>
+    <input type="submit" name="Submit Survey" class="button">
+        <input type="reset" class="button" value="Start over">
+</form>
+	</div>
+	 <div class="footer"><br>
+         	2016 copyright
+		</div>
+	</div>
+</body>
+</html>
